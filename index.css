@@ -1,0 +1,55 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: yellow;
+   
+    }
+    
+
+.pumpqin{
+    color: orange;
+
+}
+.CandyCorn{
+    color: yellow;
+}
+.goblin{
+    color:green;
+}
+.vampire{
+    color:red;
+}
+.witch{
+    color:purple;
+}
+.moon{
+    color:blue;
+}
+
+    #timer{
+        
+         font-size:60px;
+         display:flex;
+         align-content: flex-start;
+    
+     }
+    
+     .label{
+         font-size:25px;
+         vertical-align: top;
+         justify-content: flex-start;
+           
+     }
+     .container{
+        width: 100%;
+        height:100vh;
+        justify-content: center;
+        align-items: center;
+        display:flex;
+    } 
+
+.pumpqin,.witch,.ghost,.goblin,.moon,.vampire,.candycorn{
+display:inline-block;
+
+}
+ 
