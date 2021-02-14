@@ -1,0 +1,192 @@
+
+  
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Halloween Seven</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Halloween.css" >
+        
+
+            
+            
+            
+            
+            
+    </head>
+    <body>
+<button class="pumqin"type="button" onclick="myFunction()"> Pumpkin</button>
+<button class="CandyCorn"type="button" onclick="myFunction1()"> Candy Corn</button>
+<button class="goblin"type="button" onclick="myFunction2()"> Goblin</button>
+<button class="ghost"type="button" onclick="myFunction3()"> Ghost</button>
+<button class="vampire"type="button" onclick="myFunction4()"> Vampire</button>
+<button class="witch"type="button" onclick="myFunction5()"> Witch</button>
+<button class="moon"type="button" onclick="myFunction6()"> Moon</button>
+
+
+<div class="container">
+    <div  id="timer">
+   <span  id="timer-days"></span>
+    <span  id="timer-hours"></span>
+    <span  id="timer-minutes"></span>
+    <span  id="timer-seconds"></span>
+    </div>
+
+</div>
+<p id=timer1></p>
+<span  id="timer-days1"></span>
+    <span  id="timer-hours1"></span>
+    <span  id="timer-minutes1"></span>
+    <span  id="timer-seconds1"></span>
+</p>
+<script>
+      function myFunction(){
+                document.body.style.color="orangered";
+                document.vlinkColor="orange";
+                document.linkColor="white";
+                document.body.style.backgroundColor="black";
+            }
+            
+            function myFunction1(){
+                document.body.style.color="yellow";
+                document.vlinkColor="white";
+                document.linkColor="tan";
+                document.body.style.backgroundColor="black";
+            
+            }
+            
+            function myFunction2(){
+                document.body.style.color="green";
+                document.vlinkColor="snow";
+                document.linkColor="green";
+                document.body.style.backgroundColor="black";
+            
+            }
+            function myFunction3(){
+                document.body.style.color="snow";
+                document.vlinkColor="grey";
+                document.linkColor="white";
+                document.body.style.backgroundColor="black";
+            
+            }
+            function myFunction4(){
+                document.body.style.color="red";
+                document.vlinkColor="darkred";
+                document.linkColor="firebrick";
+                document.body.style.backgroundColor="black";
+            
+            }
+            function myFunction5(){
+                document.body.style.color="deeppink";
+                document.vlinkColor="hotpink";
+                document.linkColor="purple";
+                document.body.style.backgroundColor="black";
+            
+            }
+            function myFunction6(){
+                document.body.style.color="aqua";
+                document.vlinkColor="white";
+                document.linkColor="yellow";
+                document.body.style.backgroundColor="black";
+            
+            }
+            
+            
+            
+
+var holidazeEnd=new Date("Oct, 31 2021 1:43:00").getTime();
+var holidazeEnd1=new Date("Jun, 9 2021 19:18:00").getTime();
+/*var holidaze[
+new Date("Jun, 9 2019 1:35:00").getTime();
+ ]*/
+var timer= setInterval(function(){
+
+let now=new Date().getTime();
+let t=holidazeEnd - now;
+
+
+
+if (t >= 860)
+ {
+    
+    let days = Math.floor(t / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    let secs = Math.floor((t % (1000 * 60)) / 1000);
+
+    document.getElementById("timer-days").innerHTML=days+"<span class= 'label'> Days</span>";
+
+    
+    document.getElementById("timer-hours").innerHTML=("0"+hours).slice(-2)+"<span class= 'label'> Hours</span>";
+
+    
+    document.getElementById("timer-minutes").innerHTML=("0"+mins).slice(-2)+"<span class= 'label'> Minutes</span>";
+
+    
+    document.getElementById("timer-seconds").innerHTML=("0"+secs).slice(-2)+"<span class= 'label'> Seconds</span>";
+
+
+    ;}
+     else{
+         
+    document.getElementById("timer").innerHtml=("Happy Independence Day!");}
+},1000)
+
+/*---------------------------------------------*/
+
+
+var timer1= clearTimeout(function(){
+
+let now=new Date().getTime();
+let t=holidazeEnd1 - now;
+
+if (t >= 43000) {
+    
+    let days = Math.floor(t / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    let secs = Math.floor((t % (1000 * 60)) / 1000);
+
+    document.getElementById("timer-days1").innerHTML=days+"<span class= 'label'> Days</span>";
+
+    
+    document.getElementById("timer-hours1").innerHTML=("0"+hours).slice(-2)+"<span class= 'label'> Hours</span>";
+
+    
+    document.getElementById("timer-minutes1").innerHTML=("0"+mins).slice(-2)+"<span class= 'label'> Minutes</span>";
+
+    
+    document.getElementById("timer-seconds1").innerHTML=("0"+secs).slice(-2)+"<span class= 'label'> Seconds</span>";
+
+}
+     else
+    document.getElementById("timer").innerHtml="Merry Xmas!";}
+,45000);
+
+countdown(holidazeEnd,timer);
+
+countdown(holidazeEnd1,timer1)
+
+</script>
+    </body>
+</html>
+      
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
+</html>
+
